@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="register" class="panel">
+    <h2>注册</h2>
+    <form action=""  method="POST" enctype="application/x-www-form-urlencoded">
+        <div class="form-item">
+            <label>
+                <span class="txt">姓名：</span>
+                <input type="text" class="form-input" name="username">
+            </label>
+        </div>
+        <div class="form-item">
+            <label>
+                <span class="txt">密码：</span>
+                <input type="password" class="form-input" name="password">
+            </label>
+        </div>
+        <div class="form-item">
+            <label>
+                <span class="txt">重复密码：</span>
+                <input type="password" class="form-input" name="repeatPassword">
+            </label>
+        </div>
+        <div class="form-item">
+            <label>
+                <span class="txt"></span>
+                <!-- <button class="form-button primary">登录</button> -->
+                <!-- button能够触发HTML页面表单的提交 -->
+                <button class="form-button">注册</button>
+                <a class="form-button" href="/login">立即登录</a>
+            </label>
+        </div>
+    </form>
+</div>
+{% endblock %}
